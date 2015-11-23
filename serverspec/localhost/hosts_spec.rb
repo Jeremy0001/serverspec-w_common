@@ -9,7 +9,7 @@ describe 'w_comman::hosts' do
 
 	describe host('chefserver.examplechefserver.com') do
     it { should be_resolvable.by('hosts') }
-    its(:ipaddress) { should eq '10.10.1.84' }
+    its(:ipaddress) { should eq '172.31.0.11' }
   end
 
 # following tests does not pass in w_common test as this config applied only
