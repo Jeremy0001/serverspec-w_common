@@ -4,7 +4,7 @@ describe 'w_comman::hosts' do
 
   describe host('localhost') do
     it { should be_resolvable.by('hosts') }
-    its(:ipaddress) { should eq '127.0.0.1' }
+    its(:ipv4_address) { should eq '127.0.0.1' }
   end
 
 	describe host('chefserver.examplechefserver.com') do
