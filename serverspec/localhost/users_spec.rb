@@ -4,7 +4,6 @@ describe 'w_comman::users' do
 
 	describe group('admin') do
 		it { should exist }
-	  it { should have_gid 111 }
 	end
 
   describe user('bobo') do
@@ -50,10 +49,4 @@ describe 'w_comman::users' do
 	  it { should be_owned_by 'frank' }
 	  it { should be_grouped_into 'frank' }
 	end
-
-  describe group('admin') do
-    it { should exist }
-    it { should have_gid 111 }
-  end
-
 end
